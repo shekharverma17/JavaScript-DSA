@@ -9,9 +9,8 @@
     },0)
   };
 /* 
-  Runtime: 103 ms, faster than 34.02% of JavaScript online submissions for Matrix Diagonal Sum.
-  Memory Usage: 43 MB, less than 84.85% of JavaScript online submissions for Matrix Diagonal Sum.
-
+Runtime: 67 ms, faster than 92.84% of JavaScript online submissions for Matrix Diagonal Sum.
+Memory Usage: 42.9 MB, less than 88.29% of JavaScript online submissions for Matrix Diagonal Sum.
 
  */
 /* var diagonalSum = function(mat) {

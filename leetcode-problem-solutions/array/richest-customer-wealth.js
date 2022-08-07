@@ -25,4 +25,6 @@ const maximumWealth = function(accounts) {
 Runtime: 58 ms, faster than 97.69% of JavaScript online submissions for Richest Customer Wealth.
 Memory Usage: 42.2 MB, less than 62.61% of JavaScript online submissions for Richest Customer Wealth.
 
+https://codeburst.io/reduce-vs-for-loop-3c1a84e63872
+https://stackoverflow.com/questions/43556132/javascript-performance-reduce-vs-for-loop
 */

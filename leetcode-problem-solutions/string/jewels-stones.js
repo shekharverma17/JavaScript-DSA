@@ -1,4 +1,7 @@
 /**
+ * 
+ * https://leetcode.com/problems/jewels-and-stones/
+ * 
  * @param {string} jewels
  * @param {string} stones
  * @return {number}
@@ -18,7 +21,24 @@
 /*   
   Runtime: 74 ms, faster than 83.38% of JavaScript online submissions for Jewels and Stones.
   Memory Usage: 42.1 MB, less than 77.12% of JavaScript online submissions for Jewels and Stones.
+
+  https://leetcode.com/problems/jewels-and-stones/discuss/?currentPage=1&orderBy=most_votes&query=javascript%20o%28n%29
+  
    */
+
+
+
+  sample 100 ms submission
+/**
+ * @param {string} jewels
+ * @param {string} stones
+ * @return {number}
+ */
+var numJewelsInStones = function (jewels, stones) {
+     return stones.replaceAll(new RegExp('[^' + jewels + ']', 'g'), "").length
+};
+
+
 
 //  var numJewelsInStones = function(jewels, stones) {
 //     let count = 0;
