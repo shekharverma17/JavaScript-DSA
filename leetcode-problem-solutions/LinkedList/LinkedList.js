@@ -131,10 +131,10 @@ class Node{
         let prev = null
         let curr = this.head
         while(curr){
-          let next = curr.next
-          curr.next = prev
-          prev = curr
-          curr = next
+          let next = curr.next //next = 2 //next =3 //next = 4 // next =5 //null
+          curr.next = prev // curr.next(1.next) = null // 2.next = 1 //3.next = 2 //4.next = 3 //5.next =4
+          prev = curr //prev= 1 // prev = 2 // prev =3 // prev = 4 //prev =5
+          curr = next //2>1 //3>2>1 //4>3>2>1>null //5>4>3>2>1 //curr = null break
         }
        this.head = prev
     }
