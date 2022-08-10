@@ -2,6 +2,7 @@
 https://leetcode.com/problems/number-of-recent-calls/submissions/
 
  */
+
 var RecentCounter = function() {
     this.requests = []
     this.front = 0
@@ -32,7 +33,7 @@ RecentCounter.prototype.ping = function(t) {
     this.count++
     return this.count
 };
-const recentCounter = new RecentCounter();
+/* const recentCounter = new RecentCounter();
 //["RecentCounter","ping","ping","ping","ping","ping"]
 //[[],[642],[1849],[4921],[5936],[5957]]
 console.log(recentCounter.ping(642));     // requests = [1], range is [-2999,1], return 1
@@ -44,7 +45,7 @@ console.log(recentCounter.ping(5957));
 console.log(5936-3000)
 //[null,1,2,1,2,3]
 
-
+ */
 
 var RecentCounter = function() {
     this.counter = []
