@@ -1,0 +1,81 @@
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {number}
+ */
+
+
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @return {number}
+ */
+ const getDecimalValue = function(head) {
+    let ans = 0
+    while(head) {
+        ans = (ans*2)+head.val
+        head = head.next;
+    }
+    return ans
+};
+
+var getDecimalValue = function(head) {
+    
+    //101 == 1*2^2+0*2^1+1*2^0 = 4+0+1 == 5
+    
+    //ans = 1 //101
+    //ans*2+value
+    //1 => 2^0x1 = ans = 1
+    //0 => ans(1)x2+0 = 2
+    //1 => ans(2)X2+1 =5
+    console.log(head)
+    let temp = head;
+    let ans = 0;
+     console.log(temp)
+    while(temp){
+          console.log(ans*2)
+        console.log((ans*2))
+         console.log(temp.value)
+          ans = (ans*2)+temp.value
+          temp = temp.next;
+    }
+    return ans;
+};
+
+/* 
+https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/discuss/919376/o(n)-javascript
+
+ */
+
+/**
+
+Definition for singly-linked list.
+function ListNode(val, next) {
+this.val = (val===undefined ? 0 : val)
+this.next = (next===undefined ? null : next)
+}
+/
+/*
+@param {ListNode} head
+@return {number}
+*/
+var getDecimalValue = function(head) {
+    let x="";
+    while(head!=null){
+    x=x+head.val;
+    head=head.next
+    }
+    return parseInt(x, 2);
+    };
