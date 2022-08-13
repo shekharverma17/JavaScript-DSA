@@ -30,3 +30,15 @@
      }
      return true;
  }
+/* 
+
+ https://leetcode.com/problems/evaluate-boolean-binary-tree/discuss/2341383/JavaScript-Simple-Recursive-Solution
+ */
+ const evaluateTree = function(root) {
+    if(root.val == 2){
+        return evaluateTree(root.left) || evaluateTree(root.right)
+    }else if(root.val == 3){
+        return evaluateTree(root.left) && evaluateTree(root.right)
+    }
+    return root.val
+}
