@@ -1,6 +1,9 @@
 
 /* 
 
+https://www.youtube.com/watch?v=gkssX4evzkM
+
+
 [1,2,2,3,null,null,3,4,null,null,4] [] [3,9,20,null,null,15,7]
 
 
