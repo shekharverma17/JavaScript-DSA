@@ -15,3 +15,11 @@
     longesSub = Math.max(longesSub, strSet.size)
     return longesSub;
 };
+
+
+"dvdf"
+"au"
+""
+"abcabcbb"
+"pwwkew"
+" "
