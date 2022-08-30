@@ -1,4 +1,25 @@
 /**
+ * 
+ * https://leetcode.com/problems/sliding-window-maximum/submissions/
+ * 
+ * 
+ * @param {number[]} nums
+ * @param {number} k
+ * @return {number[]}
+ */
+ var maxSlidingWindow = function(nums, k) {
+  let r =0, res = [];
+  for(r=0; r<=nums.length-k;r++){
+    let max = 0, win = 0
+      while(win<k){
+          max = max && max > nums[r+win] ? max : nums[r+win]
+          win++
+      }
+      res.push(max)
+  }
+  return res
+};
+/**
  * @param {number[]} nums
  * @param {number} k
  * @return {number[]}
