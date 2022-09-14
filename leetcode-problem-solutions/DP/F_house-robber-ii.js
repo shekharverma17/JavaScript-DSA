@@ -7,6 +7,7 @@
  */
  var rob = function(nums) {
     let n = nums.length
+    
     if(n === 1) return nums[0]
     function helper(start, end){
         let maxRob = preRob = 0
